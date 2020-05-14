@@ -4,7 +4,7 @@ class Dog
   def initialize(attributes)
     #id: nil, name:, breed:
     attributes.each {|key, value| self.send(("#{key}="), value)}
-    self.id ||= nil
+    self.id = nil
   end
 
   def self.create_table
